@@ -1,8 +1,19 @@
 <!DOCTYPE html>
 <html>
 <head>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-154139545-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-154139545-1');
+</script>
+
   <title>Let's Walk Belfast</title>
     <link rel= "stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" crossorign="anonymous">
+    <script src="https://kit.fontawesome.com/7e00caa6e0.js" crossorigin="anonymous"></script>
       <link rel="stylesheet" type="text/css" href="CSS/styles.css">
 </head>
 <body>
@@ -22,20 +33,23 @@
     <button id="myBtn" onclick="myFunction()">Pause</button>
   </div>
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-  <a class="navbar-brand" href="#">Let's Walk Belfast</a>
+  <a class="navbar-brand" href="index.html">Let's Walk Belfast</a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
   <div class="collapse navbar-collapse" id="navbarNav">
     <ul class="navbar-nav">
       <li class="nav-item active">
-        <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+        <a class="nav-link" href="index.html"><i class="fas fa-home"></i>&nbsp;Home <span class="sr-only">(current)</span></a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="Walks.html">Walks</a>
+        <a class="nav-link" href="Walks.html"><i class="fas fa-hiking"></i>&nbsp;Walks</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="About.html">About</a>
+        <a class="nav-link" href="About.html"><i class="fas fa-info"></i>&nbsp;About</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="ContactUs.html"><i class="fas fa-comments"></i>&nbsp;Contact Us</a>
       </li>
     </ul>
   </div>
