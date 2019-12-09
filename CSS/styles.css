@@ -18,13 +18,14 @@ body {
 /* Add some content at the bottom of the video/page */
 }
 .content {
-  position: fixed;
-  bottom: 0;
+  position: relative;
+  bottom: -80px;
   background: rgba(0, 0, 0, 0.5);
   color: #f1f1f1;
-  width: 100%;
   padding: 20px;
-  margin-bottom: 50px;
+  margin-bottom: 20px;
+
+
 }
 
 /* Style the button used to pause/play the video */
@@ -48,23 +49,34 @@ body {
   padding: 60px;
   color: white;
   text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
-  font-size: 30px;
-  position: fixed;
+  font-size: 40px;
+  position: relative;
   margin: auto;
+  text-align:center;
 
+}
+.Site {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+.Site-content {
+  flex: 1;
 }
 
 .footer {
-  position: fixed;
-  left: 0;
-  bottom: 0;
+  position: relative;
+  left: auto;
+  bottom: -50px;
   width: 100%;
   background-color:black;
   color: white;
   text-align: center;
   align-items: flex-end;
+  flex-direction: row;
 }
 #name1 {
-  font-size: 10px;
+  font-size: 15px;
   font-family: Luminari, fantasy;
 }

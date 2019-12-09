@@ -16,10 +16,10 @@
     <script src="https://kit.fontawesome.com/7e00caa6e0.js" crossorigin="anonymous"></script>
       <link rel="stylesheet" type="text/css" href="CSS/styles.css">
 </head>
-<body>
+<body class="Site">
 
 
-
+<main class="Site-content">
 
 <!-- The video -->
 <video autoplay muted loop id="video1">
@@ -27,31 +27,7 @@
      <source src="Images/index-video.webm" type="video/webm">
 </video>
 
- <!-- Optional: some overlay text to describe the video -->
 
-  <div class="content">
-    <h1>Lets get active</h1>
-    <p>Check out the best walks in Belfast</p>
-    <p>Belfast may be a small city, but it has some amazing walks. There is no excuse for sitting on the couch. Check out these walks.</p>
-    <!-- Use a button to pause/play the video with JavaScript -->
-    <button id="myBtn" onclick="myFunction()">Pause</button>
-    <!--not working-->
-  </div>
-
-  <script>
-  var video = document.getElementById("video1");
-  var btn = document.getElementById("myBtn");
-
-  function myFunction() {
-    if (video.paused) {
-      video.play();
-      btn.innerHTML = "Pause";
-    } else {
-      video.pause();
-      btn.innerHTML = "Play";
-    }
-  }
-</script>
 
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
 <a class="navbar-brand" href="index.html">Let's Walk Belfast</a>
@@ -80,9 +56,34 @@
   <h1>Let's Walk Belfast</h1>
   <p>Guide of Belfast</p>
 </div>
+
+<!-- Optional: some overlay text to describe the video -->
+ <div class="content">
+   <h1>Lets get active</h1>
+   <p>Check out the best walks in Belfast</p>
+   <p>Belfast may be a small city, but it has some amazing walks. There is no excuse for sitting on the couch. Check out these walks.</p>
+   <!-- Use a button to pause/play the video with JavaScript -->
+   <button id="myBtn" onclick="myFunction()">Pause</button>
+   <!--not working-->
+ </div>
+
+ <script>
+ var video = document.getElementById("video1");
+ var btn = document.getElementById("myBtn");
+
+ function myFunction() {
+   if (video.paused) {
+     video.play();
+     btn.innerHTML = "Pause";
+   } else {
+     video.pause();
+     btn.innerHTML = "Play";
+   }
+ }
+</script>
+</main>
 <div class="footer">
-  <p>Post by:</p>
-    <div id="name1"> The Vikings </div>
+  <img src="Images/vikings_logo-01.png" class="logo" alt="The Vikings" width="100px">
 </div>
 
 
