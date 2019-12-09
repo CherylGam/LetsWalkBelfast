@@ -16,43 +16,40 @@
     <script src="https://kit.fontawesome.com/7e00caa6e0.js" crossorigin="anonymous"></script>
       <link rel="stylesheet" type="text/css" href="CSS/styles.css">
 </head>
-<body>
+<body class="Site">
 
-  </div>
-  <div class="fullscreen_bg">
-    <video autoplay muted loop poster="Images/Ridge2-small.jpg" class="video1">
-           <source src="Images/index-video.mp4" type="video/mp4">
-            <source src="Images/index-video.webm" type="video/webm">
-       </video>
-  </div>
-  <div class="content">
-    <h1>Lets get active</h1>
-    <p>Check out the best walks in Belfast</p>
-    <p>Belfast may be a small city, but it has some amazing walks. There is no excuse for sitting on the couch. Check out these walks.</p>
-    <!-- Use a button to pause/play the video with JavaScript -->
-    <button id="myBtn" onclick="myFunction()">Pause</button>
-  </div>
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-  <a class="navbar-brand" href="index.html">Let's Walk Belfast</a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-  <div class="collapse navbar-collapse" id="navbarNav">
-    <ul class="navbar-nav">
-      <li class="nav-item active">
-        <a class="nav-link" href="index.html"><i class="fas fa-home"></i>&nbsp;Home <span class="sr-only">(current)</span></a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="Walks.html"><i class="fas fa-hiking"></i>&nbsp;Walks</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="About.html"><i class="fas fa-info"></i>&nbsp;About</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="ContactUs.html"><i class="fas fa-comments"></i>&nbsp;Contact Us</a>
-      </li>
-    </ul>
-  </div>
+
+<main class="Site-content">
+
+<!-- The video -->
+<video autoplay muted loop id="video1">
+ <source src="Images/index-video.mp4" type="video/mp4">
+     <source src="Images/index-video.webm" type="video/webm">
+</video>
+
+
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+<a class="navbar-brand" href="index.html">Let's Walk Belfast</a>
+<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+  <span class="navbar-toggler-icon"></span>
+</button>
+<div class="collapse navbar-collapse" id="navbarNav">
+  <ul class="navbar-nav">
+    <li class="nav-item active">
+      <a class="nav-link" href="index.html"><i class="fas fa-home"></i>&nbsp;Home <span class="sr-only">(current)</span></a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="Walks.html"><i class="fas fa-hiking"></i>&nbsp;Walks</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="About.html"><i class="fas fa-info"></i>&nbsp;About</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="ContactUs.html"><i class="fas fa-comments"></i>&nbsp;Contact Us</a>
+    </li>
+  </ul>
+</div>
 </nav>
 
 <div class="header1">
@@ -60,35 +57,33 @@
   <p>Guide of Belfast</p>
 </div>
 
-    <!--not working-->
-  <script>
-  var video = document.getElementById("video1");
-  var btn = document.getElementById("myBtn");
+<!-- Optional: some overlay text to describe the video -->
+ <div class="content">
+   <h1>Lets get active</h1>
+   <p>Check out the best walks in Belfast</p>
+   <p>Belfast may be a small city, but it has some amazing walks. There is no excuse for sitting on the couch. Check out these walks.</p>
+   <!-- Use a button to pause/play the video with JavaScript -->
+   <button id="myBtn" onclick="myFunction()">Pause</button>
+   <!--not working-->
+ </div>
 
-  function myFunction() {
-    if (video.paused) {
-      video.play();
-      btn.innerHTML = "Pause";
-    } else {
-      video.pause();
-      btn.innerHTML = "Play";
-    }
-  }
+ <script>
+ var video = document.getElementById("video1");
+ var btn = document.getElementById("myBtn");
 
-
-  </script>
-<!--spinner added but not working yet-->
-  <div class="d-flex justify-content-center">
-  <div class="spinner-border" role="status">
-    <span class="sr-only">Loading...</span>
-  </div>
-</div>
-
-
-
+ function myFunction() {
+   if (video.paused) {
+     video.play();
+     btn.innerHTML = "Pause";
+   } else {
+     video.pause();
+     btn.innerHTML = "Play";
+   }
+ }
+</script>
+</main>
 <div class="footer">
-  <p>Post by:</p>
-    <div id="name1"> The Vikings </div>
+  <img src="Images/vikings_logo-01.png" class="logo" alt="The Vikings" width="100px">
 </div>
 
 
