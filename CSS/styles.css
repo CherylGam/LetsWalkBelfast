@@ -72,3 +72,12 @@ animation: imgage1 5s infinite;
             overflow: hidden;
             z-index: 1;
         }
+#image {
+  width: 100px;
+  height: 100px;
+}
+
+
+.carousel {
+  width:400px;
+}
