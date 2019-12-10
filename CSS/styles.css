@@ -84,3 +84,25 @@ body {
   color: black;
   
 }
+
+#bg {
+            position: fixed;
+            left: 30px;
+            top: 20px;
+            min-width: 100%;
+            min-height: 100%;
+            width: auto;
+            height: auto;
+            overflow: hidden;
+            z-index: 1;
+        }
+#image {
+  width: 100px;
+  height: 100px;
+}
+
+
+.carousel {
+  width:400px;
+}
+
