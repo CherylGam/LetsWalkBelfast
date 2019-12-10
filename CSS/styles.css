@@ -19,7 +19,7 @@ body {
 }
 .content {
   position: relative;
-  bottom: -80px;
+  bottom: -110px;
   background: rgba(0, 0, 0, 0.5);
   color: #f1f1f1;
   padding: 20px;
@@ -82,7 +82,7 @@ body {
 }
 #walks{
   color: black;
-  
+
 }
 
 #bg {
@@ -105,4 +105,3 @@ body {
 .carousel {
   width:400px;
 }
-
